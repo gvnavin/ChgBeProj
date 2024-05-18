@@ -1,0 +1,36 @@
+{
+  "services": [
+    {
+      "serviceName": "S1",
+      "noOfCredits": 1
+    },
+    {
+      "serviceName": "S2",
+      "noOfCredits": 2
+    },
+    {
+      "serviceName": "S3",
+      "noOfCredits": 3
+    }
+  ],
+  "credits": [
+    {
+      "packageName": "Basic Package",
+      "noOfCredits": 100,
+      "price": 100.00,
+      "denomination": "USD"
+    },
+    {
+      "packageName": "Standard Package",
+      "noOfCredits": 250,
+      "price": 225.00,
+      "denomination": "USD"
+    },
+    {
+      "packageName": "Premium Package",
+      "noOfCredits": 500,
+      "price": 450.00,
+      "denomination": "USD"
+    }
+  ]
+}

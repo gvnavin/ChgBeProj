@@ -1,0 +1,27 @@
+[
+  {
+    "customerId": "C12345",
+    "packageName": "Basic Package",
+    "timestamp": "2024-05-18T14:30:00Z"
+  },
+  {
+    "customerId": "C67890",
+    "packageName": "Standard Package",
+    "timestamp": "2024-06-01T09:15:00Z"
+  },
+  {
+    "customerId": "C12345",
+    "packageName": "Premium Package",
+    "timestamp": "2024-07-20T20:45:00Z"
+  },
+  {
+    "customerId": "C44556",
+    "packageName": "Basic Package",
+    "timestamp": "2024-08-15T16:00:00Z"
+  },
+  {
+    "customerId": "C78901",
+    "packageName": "Standard Package",
+    "timestamp": "2024-09-10T12:00:00Z"
+  }
+]

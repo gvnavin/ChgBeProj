@@ -1,0 +1,22 @@
+[
+  {
+    "customerId": "C12345",
+    "serviceName": "S1"
+  },
+  {
+    "customerId": "C67890",
+    "serviceName": "S2"
+  },
+  {
+    "customerId": "C12345",
+    "serviceName": "S3"
+  },
+  {
+    "customerId": "C44556",
+    "serviceName": "S1"
+  },
+  {
+    "customerId": "C78901",
+    "serviceName": "S2"
+  }
+]
