@@ -1,0 +1,11 @@
+package graviton.config.core
+
+interface ConfigCrudDao<T, ID> {
+    fun batchSave(entities: List<T>)
+
+    //for future use cases, implement when needed
+    fun create(entity: T): T = TODO()
+    fun read(id: ID): T = TODO()
+    fun update(entity: T): T = TODO()
+    fun delete(id: ID): Void = TODO()
+}
