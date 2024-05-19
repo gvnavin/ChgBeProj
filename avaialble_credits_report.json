@@ -1,0 +1,19 @@
+{
+  "availableCredits": [{
+    "availableCredits": 248,
+    "comment": "C78901 has 248 credits to use our services.",
+    "customerId": "C78901"
+  }, {
+    "availableCredits": 99,
+    "comment": "C44556 has 99 credits to use our services.",
+    "customerId": "C44556"
+  }, {
+    "availableCredits": 248,
+    "comment": "C67890 has 248 credits to use our services.",
+    "customerId": "C67890"
+  }, {
+    "availableCredits": 596,
+    "comment": "C12345 has 596 credits to use our services.",
+    "customerId": "C12345"
+  }]
+}

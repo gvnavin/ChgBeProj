@@ -8,7 +8,7 @@ import graviton.dal.core.PurchaseDao
 import graviton.dal.core.UsageDao
 import graviton.dal.factory.DaoFactory
 import graviton.inputreaders.InputFileReader
-import graviton.models.CreditsPrice
+import graviton.reports.AvailableCreditsReportGenerator
 
 fun main() {
 
@@ -32,5 +32,7 @@ fun main() {
 
     val availableCredits = AvailableCreditsCalculator.calculate("C12345")
     println("availableCredits = ${availableCredits}")
+
+    AvailableCreditsReportGenerator.generate("avaialble_credits_report.json")
 
 }
