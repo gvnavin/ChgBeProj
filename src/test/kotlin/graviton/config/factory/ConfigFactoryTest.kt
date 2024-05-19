@@ -4,8 +4,10 @@ import graviton.config.core.CreditsPriceConfig
 import graviton.config.core.ServicePriceConfig
 import graviton.config.inmemory.InMemoryCreditsPriceConfig
 import graviton.config.inmemory.InMemoryServicePriceConfig
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertThrows
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions.*
 
 class ConfigFactoryTest {
 

@@ -1,8 +1,8 @@
 package graviton.calculators.strategies.impl
 
 import graviton.calculators.strategies.core.AvailableCreditsCalculationStrategy
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions.*
 
 class SimpleDifferenceAvailableCreditsCalculationStrategyTest {
 

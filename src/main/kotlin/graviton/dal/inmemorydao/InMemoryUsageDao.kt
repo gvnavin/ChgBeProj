@@ -1,9 +1,9 @@
 package graviton.dal.inmemorydao
 
-import graviton.models.UsageInfo
 import graviton.dal.core.UsageDao
+import graviton.models.UsageInfo
 
-object InMemoryUsageDao: UsageDao {
+object InMemoryUsageDao : UsageDao {
 
     private val indexByCustomerId = HashMap<String, ArrayList<UsageInfo>>()
 

@@ -10,7 +10,7 @@ import graviton.dal.inmemorydao.InMemoryUsageDao
 object DaoFactory {
 
     inline fun <reified T> getDao(): T {
-        return when(val option = getUnderlyingDaoOption()) {
+        return when (val option = getUnderlyingDaoOption()) {
             "inMemory" -> getInMemoryDao()
             else -> throw IllegalArgumentException("Unsupported option: $option")
         }

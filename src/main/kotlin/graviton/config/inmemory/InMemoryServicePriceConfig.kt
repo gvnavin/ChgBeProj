@@ -1,10 +1,10 @@
 package graviton.config.inmemory
 
-import graviton.models.ServicePrice
 import graviton.config.core.ServicePriceConfig
 import graviton.exceptions.ServiceNotFoundException
+import graviton.models.ServicePrice
 
-object InMemoryServicePriceConfig: ServicePriceConfig {
+object InMemoryServicePriceConfig : ServicePriceConfig {
 
     private val indexByServiceName = HashMap<String, ServicePrice>()
 

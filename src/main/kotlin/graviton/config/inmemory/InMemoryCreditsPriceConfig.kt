@@ -1,8 +1,8 @@
 package graviton.config.inmemory
 
-import graviton.models.CreditsPrice
 import graviton.config.core.CreditsPriceConfig
 import graviton.exceptions.CreditsPricePackageNotFoundException
+import graviton.models.CreditsPrice
 
 object InMemoryCreditsPriceConfig : CreditsPriceConfig {
 

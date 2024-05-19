@@ -1,7 +1,5 @@
 package graviton.dal.core
 
-import graviton.models.PurchaseInfo
-
 interface CrudDao<T, ID> {
     fun batchSave(entities: List<T>)
     fun queryByCustomerId(customerId: String): ArrayList<T>

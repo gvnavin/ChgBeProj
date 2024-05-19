@@ -1,4 +1,4 @@
-package org.example.graviton.inputreaders.factory
+package graviton.inputreaders.factory
 
 import graviton.inputreaders.impl.PricingInfoJsonInputFileReader
 import graviton.inputreaders.impl.PurchaseInfoJsonInputFileReader

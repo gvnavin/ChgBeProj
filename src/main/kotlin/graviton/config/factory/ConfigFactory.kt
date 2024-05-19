@@ -11,7 +11,7 @@ import graviton.config.inmemory.InMemoryServicePriceConfig
 object ConfigFactory {
 
     inline fun <reified T> getConfig(): T {
-        return when(val option = getUnderlyingConfigStoreOption()) {
+        return when (val option = getUnderlyingConfigStoreOption()) {
             "inMemory" -> getInMemoryConfig()
             else -> throw IllegalArgumentException("Unsupported option: $option")
         }

@@ -1,14 +1,16 @@
 package graviton.models
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions.*
 
 class PricingInfoTest {
 
     private val servicePrice1 = ServicePrice(serviceName = "ServiceA", noOfCredits = 1)
     private val servicePrice2 = ServicePrice(serviceName = "ServiceB", noOfCredits = 2)
-    private val creditsPrice1 = CreditsPrice(packageName = "BasicPackage", noOfCredits = 100, price = 29.99, denomination = "USD")
-    private val creditsPrice2 = CreditsPrice(packageName = "PremiumPackage", noOfCredits = 200, price = 49.99, denomination = "USD")
+    private val creditsPrice1 =
+        CreditsPrice(packageName = "BasicPackage", noOfCredits = 100, price = 29.99, denomination = "USD")
+    private val creditsPrice2 =
+        CreditsPrice(packageName = "PremiumPackage", noOfCredits = 200, price = 49.99, denomination = "USD")
 
     private val pricingInfo = PricingInfo(
         services = listOf(servicePrice1, servicePrice2),

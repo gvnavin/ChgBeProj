@@ -6,14 +6,6 @@ import java.io.File
 
 abstract class AbstractJsonInputFileReader<T> : InputFileReader<T> {
 
-    override fun read(fileName: String): T {
-        TODO("Not yet implemented")
-    }
-
-    override fun readList(fileName: String): List<T> {
-        TODO("Not yet implemented")
-    }
-
     protected open fun getFile(fileName: String): File {
         val jsonFilePath = object {}.javaClass.getResource("/$fileName")!!.file
         return File(jsonFilePath)

@@ -1,12 +1,12 @@
 package graviton.inputreaders
 
+import graviton.inputreaders.factory.FileReaderFactory
 import graviton.inputreaders.impl.PricingInfoJsonInputFileReader
 import graviton.inputreaders.impl.PurchaseInfoJsonInputFileReader
 import graviton.inputreaders.impl.UsageInfoJsonInputFileReader
 import graviton.models.PricingInfo
 import graviton.models.PurchaseInfo
 import graviton.models.UsageInfo
-import org.example.graviton.inputreaders.factory.FileReaderFactory
 
 object InputFileReader {
 
@@ -20,7 +20,8 @@ object InputFileReader {
         val pricingInfo = pricingInfoInputFileReader.read(pricingFileName)
 //        println("pricingInfo = $pricingInfo")
 
-        val purchaseInfoJsonInputFileReader = FileReaderFactory.getReader<PurchaseInfoJsonInputFileReader>(pricingFileName)
+        val purchaseInfoJsonInputFileReader =
+            FileReaderFactory.getReader<PurchaseInfoJsonInputFileReader>(pricingFileName)
         val purchaseInfoList = purchaseInfoJsonInputFileReader.readList(purchaseFileName)
 //        println("purchaseInfoList = $purchaseInfoList")
 

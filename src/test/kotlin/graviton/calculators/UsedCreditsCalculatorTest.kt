@@ -2,15 +2,14 @@ package graviton.calculators
 
 import graviton.calculators.strategies.core.UsedCreditsCalculationStrategy
 import graviton.calculators.strategies.finder.StrategyFinder
-import graviton.dal.core.UsageDao
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.mockkObject
 import io.mockk.unmockkAll
 import org.junit.jupiter.api.AfterAll
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions.*
 
 class UsedCreditsCalculatorTest {
 
