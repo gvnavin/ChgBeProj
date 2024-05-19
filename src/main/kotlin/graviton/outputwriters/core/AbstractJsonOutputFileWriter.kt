@@ -3,6 +3,7 @@ package graviton.outputwriters.core
 import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Klaxon
 import com.beust.klaxon.Parser
+import com.beust.klaxon.Parser.Companion.default
 import java.io.File
 
 abstract class AbstractJsonOutputFileWriter<T> : OutputFileWriter<T> {
@@ -35,7 +36,7 @@ abstract class AbstractJsonOutputFileWriter<T> : OutputFileWriter<T> {
     private fun prettyPrint(dataList: Any): String {
         val klaxon = Klaxon()
         val sb = StringBuilder(klaxon.toJsonString(dataList))
-        val jsonString = (Parser().parse(sb) as JsonObject).toJsonString(true)
+        val jsonString = (default(  ).parse(sb) as JsonObject).toJsonString(true)
         return jsonString
     }
 }

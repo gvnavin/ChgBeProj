@@ -1,5 +1,3 @@
 package graviton.outputwriters.core
 
-abstract class AbstractCsvOutputFileWriter<T> : OutputFileWriter<T> {
-
-}
+abstract class AbstractCsvOutputFileWriter<T> : OutputFileWriter<T>

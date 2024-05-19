@@ -30,7 +30,7 @@ object AvailableCreditsReportGenerator {
             else -> "Invalid credits value" // Optional catch-all case
         }
 
-        return AvailableCredits(it, availableCredits, comment);
+        return AvailableCredits(it, availableCredits, comment)
     }
 
     private fun collectCustomerIds(n: Int): List<String> {

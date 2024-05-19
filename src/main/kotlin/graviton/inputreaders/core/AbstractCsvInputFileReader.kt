@@ -1,5 +1,3 @@
 package graviton.inputreaders.core
 
-abstract class AbstractCsvInputFileReader<T> : InputFileReader<T> {
-
-}
+abstract class AbstractCsvInputFileReader<T> : InputFileReader<T>
